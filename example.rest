@@ -1,0 +1,10 @@
+POST {{$dotenv BASE_URL}}:{{$dotenv BASE_PORT}}
+content-type: application/json
+
+{
+    "email": "{{$dotenv MOCK_EMAIL}}",
+    "password": "{{$dotenv MOCK_PASSWORD}}",
+	"destination":"{{$dotenv MOCK_DESTINATION}}",
+	"subject":"{{$dotenv MOCK_SUBJECT}}",
+	"text":"{{$dotenv MOCK_TEXT}}"
+}
